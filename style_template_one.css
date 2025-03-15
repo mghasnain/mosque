@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url('bg-green.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5vh 3vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5vh;
+}
+
+.temp_one_mosque-icon {
+  border-radius: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 13vh;
+}
+
+.temp_one_mosque-icon img {
+  width: 5vw;
+  height: 5vw;
+}
+.temp_one_mosque-blur{
+  background-color: rgb(55 135 115 / 20%);
+  border: 0.2vw solid rgba(200, 255, 240, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  /* background: rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+ 
+}
+.temp_one_mosque-blur::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: radial-gradient(circle, transparent 20%, rgba(42, 110, 93, 0.3) 20%, rgba(42, 110, 93, 0.3) 30%, transparent 30%, transparent 70%, rgba(42, 110, 93, 0.3) 70%, rgba(42, 110, 93, 0.3) 80%, transparent 80%); */
+  background-size: 50px 50px;
+}
+.temp_one_mosque-name {
+  flex-grow: 1;
+  margin: 0 1vw;
+  padding: 1.5vh 0;
+  font-size: 5vw;
+  text-align: center;
+  border-radius: 2.5vw;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 13vh;
+ 
+}
+.temp_one_temperature {
+  border-radius: 1.5vw;
+  padding: 1vh 1vw;
+  font-size: 3.646vw;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+}
+.temp_one_temperature_class{
+  font-size: 3vw;
+}
+.temp_one_shuruk-jumua {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5vh;
+}
+
+.temp_one_shuruk-card, .temp_one_jumua-card {
+  border-radius: 1.5vw;
+  width: 20vw;
+  padding: 2vh 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.temp_one_clock-section-card{
+  width: 51vw;
+}
+.temp_one_clock-section-blur{
+  background-color: rgb(191 235 160 / 20%);
+  border: 0.2vw solid rgba(200, 255, 240, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  /* background: rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.temp_one_clock-section {
+  border-radius: 2.5vw;
+  padding: 2vh 0;
+  margin-bottom: 3.5vh;
+  text-align: center;
+}
+
+.temp_one_time {
+  font-size: 7.083vw;
+  font-weight: bold;
+}
+
+.temp_one_time-gray {
+  color: #ffffff80;
+}
+
+.temp_one_date {
+  font-size: 1.563vw;
+}
+
+.temp_one_next-prayer {
+  border-radius: 1.5vw;
+  padding: 0.2vh 0;
+  text-align: center;
+  font-size:2.083vw;
+}
+.temp_one_next-prayer-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.temp_one_next-prayer-section span{
+  margin-right: 0.5vw;
+} 
+.temp_one_next-prayer-section span img{
+  width: 2.5vw;
+} 
+.temp_one_prayer-times {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.temp_one_prayer-card {
+  border-radius: 1.5vw;
+  width: 18vw;
+  padding: 2vh 0;
+  text-align: center;
+}
+.temp_one_prayer-card-blur.active{
+  background-color: rgb(191 235 160 / 20%);
+  border: 0.6vw solid rgba(200, 255, 240, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  /* background: rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.temp_one_sj-name, .temp_one_prayer-name {
+  font-size:2.083vw;
+  margin-bottom: 0.8vh;
+}
+
+.temp_one_sj-time, .temp_one_prayer-time {
+  font-size: 4.167vw;
+  font-weight: bold;
+}
+
+.temp_one_sj-subtime, .temp_one_prayer-iqamah {
+  font-size: 2.083vw;
+  margin-top: 0.8vh;
+}
+
+.temp_one_announcement {
+  border-radius: 1.5vw;
+  padding: 1.2vh 2vw;
+  text-align: center;
+  font-size: 2.135vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.temp_one_announcement-text {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  align-items: center;
+}
+.temp_one_announcement-text-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+}
+.temp_one_announcement-text-section img{
+  width: 3vw;
+} 
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
